@@ -27,16 +27,16 @@ export default function Home() {
        <ScrollView>
            <Text style={[styles.text, {fontSize: 16}]}>Recentes</Text>
            <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
-                <Products img={require('../../assets/leite.jpeg')} const='R$ 2,40' onClick={() => navigation.navigate('Produto')}>Leite</Products>
-                <Products img={require('../../assets/mel.jpeg')} const='R$ 10,00' onClick={() => navigation.navigate('Produto')}>Mel</Products>
+                <Products img={require('../../assets/cenoura.jpeg')} const='R$ 0,50' onClick={() => navigation.navigate('Produto')}>Cenoura</Products>
+                <Products img={require('../../assets/cebola.jpeg')} const='R$ 0,90' onClick={() => alert(':( produto indisponivel no momento')}>Cebola</Products>
            </View>
            <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
-                <Products img={require('../../assets/couve.jpeg')} const='R$ 0,90' onClick={() => alert('chamou')}>Couve</Products>
-                <Products img={require('../../assets/tomate.jpeg')} const='R$ 0,50' onClick={() => alert('chamou')}>Tomate</Products>
+                <Products img={require('../../assets/leite.jpeg')} const='R$ 2,40' onClick={() => alert(':( produto indisponivel no momento')}>Leite</Products>
+                <Products img={require('../../assets/mel.jpeg')} const='R$ 10,00' onClick={() => alert(':( produto indisponivel no momento')}>Mel</Products>
            </View>
            <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
-                <Products img={require('../../assets/cebola.jpeg')} const='R$ 0,90' onClick={() => alert('chamou')}>Cebola</Products>
-                <Products img={require('../../assets/cenoura.jpeg')} const='R$ 0,50' onClick={() => alert('chamou')}>Cenoura</Products>
+                <Products img={require('../../assets/couve.jpeg')} const='R$ 0,90' onClick={() => alert(':( produto indisponivel no momento')}>Couve</Products>
+                <Products img={require('../../assets/tomate.jpeg')} const='R$ 0,50' onClick={() => alert(':( produto indisponivel no momento')}>Tomate</Products>
            </View>
        </ScrollView>
    </View>    
