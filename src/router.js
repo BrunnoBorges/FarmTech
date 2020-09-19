@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { Feather } from '@expo/vector-icons';
 import { TouchableOpacity} from 'react-native';
 
+import Login from './pages/Login';
 import Home from './pages/Home';
 import Detail from './pages/Detail';
 import Market from './pages/Market';
@@ -14,6 +15,7 @@ function Routes() {
     return(
         <NavigationContainer>
             <Stack.Navigator screenOptions={{ headerTintColor: 'white', headerStyle: { backgroundColor: '#f4511e' }}}>
+                <Stack.Screen  name="Login" component={Login} options={{headerShow: false, title: 'FazenTech' }}/>
                 <Stack.Screen  name="Home" component={Home} options={{headerShow: false, title: 'FazenTech' }}/>
                 <Stack.Screen  name="Produto" component={Detail} options={{
                     headerRight: () => (
